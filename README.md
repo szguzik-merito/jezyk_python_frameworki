@@ -70,3 +70,36 @@ pip install -r requirements.txt
 
 ## ✅ Podsumowanie
 Powyższe kroki pozwalają na utworzenie środowiska wirtualnego, instalację Django oraz konfigurację projektu i aplikacji. Teraz możesz rozpocząć
+
+## 📝 Wymagania Techniczne i Organizacyjne
+
+### 🔹 Oddanie projektu
+Projekt należy oddać poprzez repozytorium **GIT** (np. GitHub, GitLab, Bitbucket).
+
+### 🔹 Terminy oddania:
+- **Pierwszy termin** – ostatni dzień zajęć.
+- **Drugi termin** – zgodnie z ustaleniami uczelni.
+
+### 🔹 Forma oddania:
+Link do repozytorium należy wysłać na adres e-mail:
+📧 **szymon.guzik@gdansk.merito.pl**
+
+#### 📌 Temat wiadomości:
+```
+Nazwa przedmiotu, Imię numer indeksu, numer grupy
+```
+**Przykład:**
+```
+Programowanie obiektowe, Szymon 43261, ININ4_PG1
+```
+
+✅ **UWAGA:** Wiadomość należy wysłać z akademickiej skrzynki e-mail. Wysyłka z innego adresu może skutkować brakiem zaliczenia.
+
+---
+
+## 🎯 Powtarzanie przedmiotu, sesja poprawkowa, warunek itp.
+W przypadku konieczności powtarzania przedmiotu, sesji poprawkowej lub warunkowego zaliczenia, obowiązuje wykonanie tego samego zadania. 
+
+📅 **Termin oddania ustalany jest indywidualnie** poprzez kontakt e-mailowy. Aby rozpocząć proces zaliczenia, należy skontaktować się z wykładowcą i oczekiwać na wiadomość zwrotną z ustaloną datą oddania projektu.
+
+---
