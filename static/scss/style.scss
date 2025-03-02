@@ -1,0 +1,39 @@
+// Mixin dla ikon Material
+@mixin material-icons-base($font-family) {
+  font-family: $font-family !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; // Domyślny rozmiar ikony
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga"; // Kluczowe dla działania ligatur
+}
+
+// Klasy dla ikon
+.material-icons {
+  @include material-icons-base("Material Icons");
+}
+
+.material-icons-outlined {
+  @include material-icons-base("Material Icons Outlined");
+}
+
+.material-icons-round {
+  @include material-icons-base("Material Icons Round");
+}
+
+.material-icons-sharp {
+  @include material-icons-base("Material Icons Sharp");
+}
+
+.material-icons-two-tone {
+  @include material-icons-base("Material Icons Two Tone");
+}

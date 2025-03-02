@@ -1,0 +1,16 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block extra_style %}
+{% endblock %}
+
+{% block content %}
+    <section class="w-full bg-white relative overflow-hidden">
+        <div class="relative max-w-[1920px] mx-auto h-full flex items-center justify-between px-6 bg-cover">
+               <h1>To jest widok prywatny dostępny tylko po zalogowaniu</h1>
+        </div>
+    </section>
+    {% include 'home/separator.html' %}
+{% endblock %}
+{% block extra_scripts %}
+    <script src="{% static 'js/dist/profile_menu.min.js' %}" defer></script>
+{% endblock %}

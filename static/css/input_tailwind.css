@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Material Icons';
+    src: url("../font/MaterialIcons-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material Icons Outlined';
+    src: url("../font/MaterialIconsOutlined-Regular.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

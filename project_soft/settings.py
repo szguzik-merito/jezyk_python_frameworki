@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-5psl(tk1u^gk4+0egpbj*pvza$6=ek-*slthevt+l$5vs0%7nw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app_soft'
 ]
 
 MIDDLEWARE = [
@@ -51,10 +53,20 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'project_soft.urls'
 
+# Konfiguracja plików statycznych
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+# Ścieżka do przechowywania wgranych plików
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,6 +91,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'ckbir',  # np. mydatabase
+#         'USER': 'postgres',  # np. postgres
+#         'PASSWORD': 'root',  # np. secretpassword
+#         'HOST': 'localhost',  # lub inny host, gdzie działa PostgreSQL
+#         'PORT': '5432',  # domyślny port PostgreSQL
+#     }
+# }
 
 
 # Password validation
